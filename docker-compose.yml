@@ -7,6 +7,7 @@ services:
     environment:
       DATABASE_URL: postgres://rivulet:rivulet@db:5432/job_tracker_development
       OTEL_EXPORTER_OTLP_ENDPOINT: http://lgtm:4318
+      APP_TOKEN_KEY: qwe123
     volumes:
     - "./api:/app"
     depends_on:
